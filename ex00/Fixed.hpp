@@ -14,4 +14,4 @@ class Fixed
 		int getRawBits();
 		void setRawBits(int const raw);
 
-}
+};

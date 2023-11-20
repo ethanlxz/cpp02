@@ -2,19 +2,19 @@
 
 const int	Fixed::frac = 8;
 
-Fixed::Fixed(void): _value(0)
+Fixed::Fixed(void): value(0)
 {
-	std::cout << "Fixed object created with default constructor" << std::endl; 
+	std::cout << "Default constructor called" << std::endl; 
 }
 
 Fixed::~Fixed(void)
 {
-	std::cout << "Fixed object destroyed" << std::endl; 
+	std::cout << "Destructor called" << std::endl; 
 }
 
 Fixed::Fixed(Fixed const &copy)
 {
-	std::cout << "Fixed object copied" << std::endl;
+	std::cout << "Copy constructor called" << std::endl;
 	*this = copy;
 }
 
@@ -23,7 +23,7 @@ Fixed::Fixed(Fixed const &copy)
 int	Fixed::getRawBits(void)
 {
 	std::cout << "getRawBits member function called" << std::endl;
-	return (this->_value);
+	return (this->value);
 }
 
 void	Fixed::setRawBits(const int raw)
